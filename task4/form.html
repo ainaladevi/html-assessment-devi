@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <title>HTML Form</title>
+  </head>
+  <ht>
+    <h1>Comprehensive Form Development with validation</h1>
+    <label for="name">Name: </label>
+    <input type="text" placeholder="Enter Your Name" required autofocus/><br /><br />
+    <label for="email">Email: </label>
+    <input type="email" placeholder="Enter your Email" autocomplete="on" required /><br /><br />
+    <label for="password">Password</label>
+    <input type="password" placeholder="Enter Password" minlength="8" autocomplete="off" required /><br /><br />
+    <label for="age">Age: </label>
+    <input type="number" min="18" max="100" step="1" /><br /><br />
+    <label for="date of birth">Date Of Birth: </label>
+    <input type="date" /><br /><br />
+    <label for="meeting time">Meeting Time: </label><br />
+    <input type="time"  /><br /><br />
+    <label for="Mobile number">Mobile Number: </label>
+    <input type="tel" placeholder="Enter mobile Number" pattern="[0-9]{10}" required /><br /><br />
+    <label for="url">Enter URL: </label><br />
+    <input type="url" required/><br /><br />
+    <label for="color">Favorite Color: </label><br />
+    <input type="color" disabled /><br /><br />
+    <label for="temperature">Current Temperature: </label><br />
+    <input type="range" min="20" max="50" /><br /><br />
+    <label for="file">Select File: </label><br />
+    <input type="file" /><br /><br />
+    <label for="Gender">Gender: </label><br />
+    <input type="radio" name="gender" />Male<br />
+    <input type="radio" name="gender" />Female<br />
+    <input type="radio" name="gender" />Other<br /><br />
+    <label for="Hobbies">Hobbies:</label><br />
+    <input type="checkbox" name="hobbies" readonly />Reading<br />
+    <input type="checkbox" name="hobbies" />Playing<br />
+    <input type="checkbox" name="hobbies" />Watching Movies<br /><br />
+    <label for="languages known">Languages Known: </label><br />
+    <select name="languages known" multiple>
+      <option value="tel">Telugu</option>
+      <option value="hin">Hindi</option>
+      <option value="eng">English</option>
+      <option value="tam">Tamil</option>
+      <option value="kan">Kannada</option>
+      <option value="mal">Malayalam</option>
+    </select><br /><br />
+    <label for="Menu">Menu: </label>
+    <select name="Menu">
+    <optgroup label="Veg">
+      <option value="mas">Masala Dosa</option>
+      <option value="dos">Dosa</option>
+      <option value="idly">Idly</option>
+      <option value="chap">Chapathi</option>
+      <option value="puri">Puri</option>
+      <option value="vada">Vada</option>
+    </optgroup>
+    <optgroup label="Non-Veg">
+      <option value="chi">Chicken</option>
+      <option value="mut">Mutton</option>
+      <option value="fish">Fish</option>
+      <option value="praw">Prawns</option>
+      <option value="cbit">Chicken Biriyani</option>
+      <option value="mbir">Mutton Biriyani</option>
+    </optgroup>
+    </select><br><br>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name: </label>
+        <input type="text" placeholder="Enter Your Name" /><br /><br />
+        <label for="email">Email: </label>
+        <input type="email" placeholder="Enter your Email" /><br /><br />
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter Password"  />
+    </fieldset><br>
+    <fieldset>
+        <legend>Education</legend>
+        <label for="college name">College Name: </label>
+        <input type="text" placeholder="Enter Your College Name" /><br /><br />
+        <label for="degree">Degree: </label>
+        <select id="degree">
+            <option>BTech</option>
+            <option>BCom</option>
+            <option>MTech</option>
+        </select>
+    </fieldset><br>
+    <fieldset>
+        <legend>Preferences</legend>
+        <label for="Favorite color">Favorite Color: </label>
+        <input type="color" /><br /><br />
+        <label for="skills">Skills: </label><br>
+        <input type="checkbox">HTML<br>
+        <input type="checkbox">CSS<br>
+        <input type="checkbox">Js<br>
+    </fieldset>
+    <label for="Address">Address: </label><br>
+    <textarea rows="5" cols="10" maxlength="50"></textarea><br><br>
+    <label for="city">Choose City: </label><br>
+    <input type="text" id="city" list="cities">
+    <datalist id="cities">
+      <option value="hyderabad">Hyderabad</option>
+      <option value="bangalore">Bangalore</option>
+      <option value="vizag">Vizag</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="chennai">Chennai</option>
+    </datalist><br><br>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </body>
+</html>
+
+ 
