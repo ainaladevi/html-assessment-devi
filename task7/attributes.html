@@ -1,21 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>data-* Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author", content="Ainala Devi">
+    <meta name="keywords" content="data-*">
+    <meta name="description" content="Html Attributes and metadata">
+    <link rel="icon" type="image" href="icons\favicon1.jpg" sizes="16*16">
+    <link rel="icon" type="image" href="icons\favicon2.jpg" sizes="32*32">
+    <link rel="icon" type="image" href="icons\favicon3.jpg" sizes="180*180">
+    <title>Html Attributes and metadata</title>
 </head>
-<body>
+<body id="main" class="body" title="main body">
+    <header id="header section" class="header" title="heading">
+        <h1 id="h1" class="h1 tag" title="Html Heading">HTML Attributes and Metadata</h1>
+    </header>
+    <div id="div section" class="div class" title="div" data-product-id="101" data-category="Electronics" contenteditable="true">
+        <h2 id="h2" class="h2 tag">Wireless Headphones</h2></div>
+    <section  id="section" class="section class" title="section" data-user-id="1" data-user-name="Devi Ainala" contenteditable="false">
+        <h2 id="h2 heading" class="h2 tag">Devi Ainala</h2></section>
+    <img id="image" class="image class" title="images" src="laptop.jpg" alt="laptop image" draggable="true"
+         data-image-type="product"
+         data-stock-status="Available">
+    <p class="paragraph" draggable="true">This is draggable</p>
+    <li id="lists" class="list class" title="list section" data-item-id="102" data-priority="High" draggable="true" hidden>Complete Html Assignment</li>
+    <button id="submit" class="button" title="submit button" data-action="Submit form" data-theme="dark">Submit</button>
+    <h2 tabindex="0">Tab Index</h2>
+    <h2 tabindex="1">first Tab</h2>
+    <h2 tabindex="2">Second Tab</h2>
+    <h2 tabindex="3">Third Tab</h2>
+    <h2 tabindex="-1">tab index -1</h2>
+    <label for="name" class="name">Name:</label>
+    <input type="text" spellcheck="true" placeholder="Enter Your Name"><br>
+    <label for="username" class="username">User Name:</label>
+    <input type="text" spellcheck="false" placeholder="Enter Your User Name"><br>
+    <label for="Address" class="address">Address: </label><br>
+    <textarea spellcheck="true" placeholder="Enter Your Address here"></textarea><br>
+    <label for="message" class="message">Message: </label><br>
+    <textarea spellcheck="false" placeholder="Enter Your Address here"></textarea><br>
+    <h2 translate="no">metadata</h2>
 
-    <button id="btn" data-user="Devi">
-        Show Name
-    </button>
-
-    <script>
-        const button = document.getElementById("btn");
-
-        button.onclick = function() {
-            alert(button.dataset.user);
-        };
-    </script>
+    <p>&copy; 2026 My Website</p>
+    <p>OpenAI&reg; Technologies</p>
+    <p>ChatBot&trade; Service</p>
+    <p>Price: 50 &euro;</p>
+    <p>Cost: 100 &pound;</p>
+    <p>Hello&nbsp;World</p>
+    <p>&lt;h1&gt;Heading Tag&lt;/h1&gt;</p>
+    <p>5 &gt; 3</p>
+    <p>Tom &amp; Jerry</p>
+    <p>&quot;Welcome to HTML&quot;</p>
 
 </body>
 </html>
