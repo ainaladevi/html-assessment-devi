@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>data-* Example</title>
+</head>
+<body>
+
+    <button id="btn" data-user="Devi">
+        Show Name
+    </button>
+
+    <script>
+        const button = document.getElementById("btn");
+
+        button.onclick = function() {
+            alert(button.dataset.user);
+        };
+    </script>
+
+</body>
+</html>
